@@ -6,8 +6,7 @@ from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 
 
-bot = Bot(token='',
-          parse_mode="HTML")
+bot = Bot(token='', parse_mode="HTML")
 dp = Dispatcher(bot)
 
 
@@ -34,8 +33,7 @@ async def parser(msg: types.Message):
         deaths = block[1].find("span").text.replace(",", " ")
         recovered = block[2].find("span").text.replace(",", " ")
 
-        country = soup.find(
-            "div", style="text-align:center;width:100%").text.strip()
+        country = soup.find("div", style="text-align:center;width:100%").text.strip()
 
         text = f"Статистика {country}\n\n<b>Случаев заражения</b>:  \
 {coronavirus_cases}\n<b>Умерло</b>:  {deaths}\n<b>Выздоровело</b>:  {recovered}"
