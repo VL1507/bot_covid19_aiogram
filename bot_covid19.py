@@ -16,16 +16,7 @@ async def start_help(msg: types.Message):
     text = """Привет!\nЭтот бот умеет отправлять статистику по COVID-19\U0001F9A0\n\n\
 Чтобы получить статистику, введите название страны на английском"""
     await msg.answer(text)
-    # await msg.answer(msg.reply)
-    # await bot.send_message(msg.from_user.id, msg.text)
-
-
-@dp.message_handler(commands="countries")
-async def echo_send(msg: types.Message):
-    # print(msg)
-    print(msg.text)
-    await msg.answer(msg)
-
+    
 
 @dp.message_handler()
 async def parser(msg: types.Message):
