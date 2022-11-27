@@ -43,5 +43,5 @@ async def parser(msg: types.Message):
 
 
 if __name__ == "__main__":
-    print("===== bot online =====")
+    print("===== @my_stats_covid19bot online =====")
     executor.start_polling(dp, skip_updates=False)  # True
