@@ -44,13 +44,6 @@ async def parser(msg: types.Message):
         await msg.answer("неверный ввод")
 
 
-# @dp.message_handler()
-# async def echo_send(msg: types.Message):
-    # print(msg)
-    # print(msg.text)
-    # await msg.answer(msg)
-
-
 if __name__ == "__main__":
     print("===== bot online =====")
     executor.start_polling(dp, skip_updates=False)  # True
