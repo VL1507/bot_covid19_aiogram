@@ -6,7 +6,7 @@ from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 
 
-bot = Bot(token='5989915776:AAG709kHNQBFJ3mV8ziKmYL0-SYrLGdjw1A',
+bot = Bot(token='',
           parse_mode="HTML")
 dp = Dispatcher(bot)
 
