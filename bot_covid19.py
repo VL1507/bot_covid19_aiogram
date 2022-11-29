@@ -11,7 +11,7 @@ async def start_help(msg: types.Message):
     text = """Привет!\nЭтот бот умеет отправлять статистику по COVID-19\U0001F9A0\n\n\
 Чтобы получить статистику, введите название страны на английском"""
     await msg.answer(text)
-    #await bot.send_message(msg.from_user.id, " ",reply_to_message_id=msg.message_id)
+    #await bot.send_message(msg.from_user.id, "reply",reply_to_message_id=msg.message_id)
     
 
 @dp.message_handler()
