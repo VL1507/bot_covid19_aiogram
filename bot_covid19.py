@@ -1,10 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
-from aiogram import Bot, types
-from aiogram.dispatcher import Dispatcher
-from aiogram.utils import executor
-
+from aiogram import Bot, Dispatcher, types, executor
 
 bot = Bot(token='', parse_mode="HTML")
 dp = Dispatcher(bot)
