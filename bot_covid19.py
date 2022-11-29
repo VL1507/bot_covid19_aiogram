@@ -35,7 +35,7 @@ async def parser(msg: types.Message):
         text = f"Статистика {country}\n\n<b>Случаев заражения</b>:  \
 {coronavirus_cases}\n<b>Умерло</b>:  {deaths}\n<b>Выздоровело</b>:  {recovered}"
         await msg.answer(text)
-    except:
+    except IndexError:
         await msg.answer("неверный ввод")
 
 
